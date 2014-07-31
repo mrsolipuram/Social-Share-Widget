@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Social Share</title>
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/social-share.js"></script>
+</head>
+<body>
+<div id="socialShare">
+</div>
+</body>
+</html>
+<script type="text/javascript">
+$(document).ready(function(){
+	//calling widget for social share
+	$('#socialShare').extHorizontalSocial({			
+		shareUrl : "localhost",
+		shareDesc : "desctioption",
+		shareTitle : "SocialShare",
+		shareImage : "image",
+		isFB:true,
+		isTW:true,
+		isGP:true,
+	});
+});
+</script>
