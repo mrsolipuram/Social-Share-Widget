@@ -3,9 +3,6 @@ $(function() {
 			// default options
 			options : {
 				shareUrl : '',
-				shareDesc : '',
-				shareTitle : '',
-				shareImage : '',
 				isFB:true,
 				isTW:false,
 				isGP:false,
@@ -37,7 +34,7 @@ $(function() {
 					$('<a>').bind("click",function(){
 						javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=600');return false;
 					}).attr({
-	                    'href' : 'https://twitter.com/share?url='+this.options.shareUrl,
+	                    'href' : 'https://twitter.com/share/share.php?u='+this.options.shareUrl,
 	                    'data-size':'large'
 	                }).html(
 	                		$('<img>').attr({
