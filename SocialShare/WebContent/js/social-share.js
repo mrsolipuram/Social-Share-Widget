@@ -24,10 +24,10 @@ $(function() {
 							$('<a>').bind("click",function(){
 								javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=600');return false;
 							}).attr({
-			                    'href' : 'https://www.facebook.com/sharer/sharer.php?u='+this.options.shareUrl+"&pId="+this.options.promoterId			                    
+			                    'href' : 'https://www.facebook.com/sharer/sharer.php?u='+this.options.shareUrl			                    
 			                }).html(
 			                		$('<img>').attr({
-			                			'src':'./images/facebook.gif'})).append(
+			                			'src':'./images/facebook.png'})).append(
 			                					$('<span class="SocialTitle">Facebook</span>')
 			                ))).appendTo(this.element);
 				}
